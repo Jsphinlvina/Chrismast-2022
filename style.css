@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Passions+Conflict&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background: radial-gradient(ellipse at bottom, #1c1920 0%, #000 100%);
+   overflow: hidden;
+   color: white;
+}
+
+/* ******************************* */
+/* Snow */
+/* ******************************* */
+
+.snowflake {
+   position: absolute;
+   width: 10px;
+   height: 10px;
+   background: linear-gradient(
+      white,
+      white
+   ); /* Workaround for Chromium's selective color inversion */
+   border-radius: 50%;
+   filter: drop-shadow(0 0 10px white);
+   overflow: hidden;
+}
+
+/* ******************************* */
+/* Text */
+/* ******************************* */
+
+.font-color {
+   color: white;
+}
+
+.title {
+   font-family: 'Satisfy', cursive;
+   font-size: 50px;
+}
+
+.text {
+   font-size: 20px;
+   font-family: 'Satisfy', cursive;
+}
+
+/* ******************************* */
+/* Positon */
+/* ******************************* */
+
+.position {
+   height: 100vh;
+}
+
+/* ******************************* */
+/* Media Query */
+/* ******************************* */
+
+/* Laptop L */
+@media (min-width: 1366px) {
+   .title {
+      font-size: 90px;
+   }
+
+   .text {
+      font-size: 40px;
+   }
+   .tree {
+      width: 100%;
+   }
+}
+
+/* Tablet */
+@media (max-width: 966px) {
+   .title {
+      font-size: 50px;
+   }
+
+   .text {
+      font-size: 20px;
+   }
+   .tree {
+      width: 100%;
+   }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+   .title {
+      font-size: 20px;
+   }
+
+   .text {
+      font-size: 15px;
+   }
+   .tree {
+      width: 50%;
+   }
+}
